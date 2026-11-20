@@ -1,0 +1,13 @@
+{
+  "name": "pi-trade-connect",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Secure integration-first commerce and Pi payment foundation.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node apps/api/src/server.js",
+    "test": "node --test",
+    "check": "node --check apps/api/src/server.js && node --check packages/payment-core/money.js && node --check packages/payment-core/state-machine.js"
+  }
+}
